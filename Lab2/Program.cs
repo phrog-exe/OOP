@@ -17,18 +17,13 @@ class Program
           auto1.Wypisz_Informacje(); 
         */
 
-        /* Ksiazka ksiazka1 = new Ksiazka("Buszujący w zbożu", "J.D. Salinger", "Literatura piękna", "Albatros", 1991, 304, true, "-------");
+        /* Ksiazka ksiazka1 = new Ksiazka("Buszujący w zbożu", "J.D. Salinger", "Literatura piękna", "Albatros", 1991, 304, true, "-------", "Buszujacy w Zbożu to specyficzna opowieść nastolatka z bujną wyobraźnia o swoim życiu, o wszelkich rozterkach, samopoczuciu i chaosie, który toczy się w jego głowie. Holden zostaje wyrzucony ze szkoły i zanim wróci do domu postanawia powłóczyć się po Nowym Jorku.", 1234567890123);
 
            ksiazka1.WypiszInformacje();
-           ksiazka1.Wypozycz();
-           ksiazka1.WypiszInformacje();
-           ksiazka1.Zwroc();
-           ksiazka1.WypiszInformacje();
-           ksiazka1.DodajRecenzje();
-           ksiazka1.WypiszInformacje();
-           ksiazka1.DodajRecenzje();
-           ksiazka1.WypiszInformacje(); 
-        */
+           ksiazka1.Przeczytaj();
+           ksiazka1.DodajDoListy();
+           ksiazka1.DodajRecenzje(); */
+        
 
         /* Pracownik pracownik1 = new Pracownik("Adam", "Adamski", "Pomywacz", "Pułaskiego 23", "12.03.1990", 111222333, true, 0);
           pracownik1.Info();
@@ -60,7 +55,7 @@ class Program
         Film1.Ocena(9);
         Film1.NapiszRecenzje("Jeden z bardziej wpływowych filmów w historii kina."); */
 
-        /* Gra Gra1 = new Gra("The Witcher 3: Wild Hunt", "RPG", "PC, PS4, Xbox One", 2015, "CD Projekt RED", "Gracz wciela się w postać łowcy potworów, Geralta z Rivii.");
+        /* Gra Gra1 = new Gra("The Witcher 3: Wild Hunt", "RPG", "PC", 2015, "CD Projekt RED", "Gracz wciela się w postać łowcy potworów, Geralta z Rivii.", "Intel core i7 9700K, GeForce rtx 4060, 16 GB RAM, 300 GB miejsca na dysku.", "Super gra!");
 
         Gra1.Zagraj();
         Gra1.ZapiszStanGry();
@@ -118,7 +113,7 @@ class Program
         zamowienie.Zaplac();
         zamowienie.OcenZamowienie(9); */
 
-        /* Samochod Samochod1 = new Samochod("Toyota","Corolla",2019,30000,1.8,140,"Benzyna","Srebrny","Klimatyzacja, nawigacja, system audio","WZ12345");
+        /* Samochod Samochod1 = new Samochod("Toyota", "Corolla", 2019, 30000, 1.8, 140, "Benzyna", "Srebrny", "Klimatyzacja, nawigacja, system audio", "WZ12345");
     
         Samochod1.UruchomSilnik();
         Samochod1.Jedz();
@@ -138,7 +133,12 @@ class Program
         smartfon.Napraw();
         smartfon.Wylacz(); */
 
-        Student student = new Student("Jan", "Kowalski", 20, "123456");
+
+
+
+
+
+       /* Student student = new Student("Jan", "Kowalski", 20, "123456");
 
         student.DodajOcene("Matematyka", 4);
         student.DodajOcene("Matematyka", 5);
@@ -146,7 +146,7 @@ class Program
         student.DodajOcene("Fizyka", 4);
         student.DodajOcene("Informatyka", 5);
 
-        student.WyswietlInformacje();
+        student.WyswietlInformacje(); */
 
 
     }

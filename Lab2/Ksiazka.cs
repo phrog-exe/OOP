@@ -8,11 +8,13 @@ namespace Lab2
 {
     public class Ksiazka
     {
-        public String tytul, autor, gatunek, wydawnictwo, recenzja;
+        public String tytul, autor, gatunek, wydawnictwo, opis, recenzje;
         public int rok_wydania, liczba_stron;
         public bool dostepnosc;
+        public long ISBN;
+        
 
-        public Ksiazka(string tytul, string autor, string gatunek, string wydawnictwo, int rok_wydania, int liczba_stron, bool dostepnosc, String recenzja)
+        public Ksiazka(string tytul, string autor, string gatunek, string wydawnictwo, int rok_wydania, int liczba_stron, bool dostepnosc, String recenzje, String opis, long ISBN)
         {
             this.tytul = tytul;
             this.autor = autor;
@@ -21,7 +23,9 @@ namespace Lab2
             this.rok_wydania = rok_wydania;
             this.liczba_stron = liczba_stron;
             this.dostepnosc = dostepnosc;
-            this.recenzja = recenzja;
+            this.recenzje = recenzje;
+            this.opis = opis;
+            this.ISBN = ISBN;
 
         }
 
@@ -29,7 +33,7 @@ namespace Lab2
         {
             Console.WriteLine("Dostępne informacje: \n" + "Tytuł: " + tytul + "\nAutor: " + autor + "\nGatunek: " + gatunek
             + "\nWydawnictwo: " + wydawnictwo + "\nRok wydania: " + rok_wydania + "\nLiczba stron: " + liczba_stron + "\nDostępność: " + dostepnosc + "\n"
-            + "Recenzje: " + '"' + recenzja + '"' + "\n");
+            + "Recenzje: " + '"' + recenzje + '"' + "\n" +"ISBN: " + ISBN+ "\n" + "Opis: " + opis + "\n");
 
         }
 
@@ -48,9 +52,21 @@ namespace Lab2
         public String DodajRecenzje()
         {
             Console.WriteLine("Dodaj recenzje: \n");
-            this.recenzja = Console.ReadLine();
+            this.recenzje = Console.ReadLine();
 
-            return this.recenzja;
+            return this.recenzje;
+        }
+
+
+
+        public void Przeczytaj()
+        {
+            Console.WriteLine("Czytasz książkę: " + tytul + " Napisaną przez " + autor);
+        }
+
+        public void DodajDoListy()
+        {
+            Console.WriteLine(tytul + " Został dodany do listy ");
         }
 
     }
